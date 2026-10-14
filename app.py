@@ -3,7 +3,7 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from a .env file
+# Load .env when present; existing environment variables take precedence.
 load_dotenv()
 
 app = Flask(__name__)
